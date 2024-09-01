@@ -1,0 +1,145 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.text-container {
+    font-family: 'Poppins', sans-serif;
+}
+
+.text-container.dark-mode {
+    color: white;
+   
+}
+
+.main-heading {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.subheading-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.subheading-text strong {
+    display: block;
+    margin-top: 0.5rem;
+}
+
+.shine-text {
+    font-size: 2rem;
+    letter-spacing: 0.1em;
+    margin-top: 2rem;
+}
+
+
+:root {
+    --main-bg-color: #ffffff;
+    --text-color: #000000;
+    --subtext-color: #4f4f4f;
+    --gradient-color: linear-gradient(90deg, #000, #61dafb, #000);
+}
+
+body.dark-mode {
+    --main-bg-color: #121212;
+    --text-color: #ffffff;
+    --subtext-color: #d1d1d1;
+    --gradient-color: linear-gradient(90deg, #fff, #61dafb, #fff);
+}
+
+body {
+    background-color: var(--main-bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.text-container {
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+    color: var(--text-color);
+}
+
+.main-heading {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--text-color);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7),
+                 0 0 20px rgba(255, 255, 255, 0.5),
+                 0 0 30px rgba(255, 255, 255, 0.3);
+}
+
+.subheading-text {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    color: var(--subtext-color);
+}
+
+.shine-text {
+    font-size: 2rem;
+    font-weight: bold;
+    background: var(--gradient-color);
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s ease-in-out infinite;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7),
+                 0 0 20px rgba(255, 255, 255, 0.5),
+                 0 0 30px rgba(255, 255, 255, 0.3);
+}
+
+.toggle-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: var(--text-color);
+    color: var(--main-bg-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.toggle-button:hover {
+    background-color: #61dafb;
+    color: #000;
+}
+
+@keyframes shine {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+
+.text-container.dark-mode {
+    color: white;
+   
+}
+
+
+.text-container {
+    font-family: 'Poppins', sans-serif;
+}
+
+.heading-container {
+    display: flex;
+    align-items: center;
+}
+
+.main-heading {
+    margin: 0;
+    margin-left: 10px;
+    font-size: 2rem;
+}
+
+.shine-text {
+    letter-spacing: 2px;
+}
+
+.dark-mode {
+   
+}

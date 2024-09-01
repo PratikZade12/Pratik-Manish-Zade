@@ -1,0 +1,132 @@
+.background {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #000;
+    filter: blur(8px);
+  }
+  
+ 
+  .blob {
+    position: absolute;
+    width: 550px;
+    height: 550px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    filter: blur(150px);
+  }
+  
+ 
+  .blob1 {
+    top: 0;
+    left: 0;
+    background-color: rgba(210, 48, 235, 0.7);
+    animation: moveBlob1 24s ease-in-out infinite;
+    filter: blur(700ms);
+  }
+  
+ 
+  .blob2 {
+    bottom: 0;
+    right: 0;
+    background-color: rgba(161, 30, 255, 0.7);
+    animation: moveBlob2 24s ease-in-out infinite;
+    filter: blur(700ms);
+  }
+  
+ 
+  @keyframes moveBlob1 {
+    0% {
+      transform: translate(0, 0);
+    }
+    12.5% {
+      transform: translate(calc(100vw - 100px), 0);
+    }
+    25% {
+      transform: translate(calc(100vw - 100px), calc(100vh - 100px));
+    }
+    37.5% {
+      transform: translate(0, calc(100vh - 100px));
+    }
+    50% {
+      transform: translate(0, 0);
+    }
+    62.5% {
+      transform: translate(calc(100vw - 100px), 0);
+    }
+    75% {
+      transform: translate(calc(100vw - 100px), calc(100vh - 100px));
+    }
+    87.5% {
+      transform: translate(0, calc(100vh - 100px));
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+  
+  @keyframes moveBlob2 {
+    0% {
+      transform: translate(0, 0);
+    }
+    12.5% {
+      transform: translate(calc(-100vw + 100px), 0);
+    }
+    25% {
+      transform: translate(calc(-100vw + 100px), calc(-100vh + 100px));
+    }
+    37.5% {
+      transform: translate(0, calc(-100vh + 100px));
+    }
+    50% {
+      transform: translate(0, 0);
+    }
+    62.5% {
+      transform: translate(calc(-100vw + 100px), 0);
+    }
+    75% {
+      transform: translate(calc(-100vw + 100px), calc(-100vh + 100px));
+    }
+    87.5% {
+      transform: translate(0, calc(-100vh + 100px));
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+  
+ 
+  @media (prefers-color-scheme: dark) {
+    .blob {
+      filter: blur(700ms);
+    }
+  }
+  
+ 
+  @media (max-width: 768px) {
+    @media (prefers-color-scheme: dark) {
+      .blob {
+        filter: blur(260ms);
+      }
+    }
+  }
+  
+ 
+  .no-animation .blob1, .no-animation .blob2 {
+    animation: none;
+    position: absolute;
+  }
+  
+  .no-animation .blob1 {
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 99, 71, 0.7);
+  }
+  
+  .no-animation .blob2 {
+    bottom: 0;
+    right: 0;
+    background-color: rgba(30, 144, 255, 0.7);
+  }
+  

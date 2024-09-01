@@ -1,0 +1,24 @@
+
+.rocket-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.rocket {
+    width: 50px;
+    height: 50px;
+    background: url('../rocket-lunch_6955522.png') no-repeat center center;
+    background-size: contain;
+    animation: rocket-animation 2000ms infinite alternate;
+    margin-right: 10px;
+}
+
+@keyframes rocket-animation {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}

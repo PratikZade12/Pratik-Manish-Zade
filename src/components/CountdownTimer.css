@@ -1,0 +1,25 @@
+.card {
+    background: linear-gradient(135deg, #f7aef8, #b9a2f6);
+    color: #000000;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.display-4 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.small {
+    font-size: 0.8rem;
+    font-weight: normal;
+}
+
+.timer-container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
